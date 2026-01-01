@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Home</a>
+            <a href="https://khalidhasananik.space/" target="_blank" class="btn-touch">Get in Touch</a>
+        </div>
+        <div class="divider-line"></div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="scraper.html" class="back-nav" style="margin-bottom:0;">
+                <img src="/icons/back.png" alt="Back">
+                Run
+            </a>
+            <div class="current-page">
+                <img src="/icons/fb.png" alt="FB" style="width: 16px;">
+                <span>Facebook Post Scraper</span>
+            </div>
+        </div>
+
+        <div class="page-controls">
+            <h2>Overview</h2>
+            <div class="toggle-switch">
+                <div class="toggle-option active" id="btnTable">Table</div>
+                <div class="toggle-option" id="btnJson">Json</div>
+            </div>
+        </div>
+
+        <div class="table-wrapper">
+            <div id="table-view" class="table-scroll-container">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th class="col-hash">#</th>
+                            <th class="col-media">Media</th>
+                            <th class="col-url">Post Url</th>
+                            <th class="col-text">Post Text</th>
+                            <th class="col-likes"># of Likes</th>
+                            <th class="col-comms"># of Comments</th>
+                            <th class="col-share"># of Shares</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        </tbody>
+                </table>
+            </div>
+
+            <div id="json-actions" class="json-actions">
+                <button class="btn-action" id="btnCopy">Copy JSON</button>
+                <button class="btn-action" id="btnDownload">Download .json</button>
+            </div>
+            <pre id="json-view"></pre>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Khalid Hasan Anik. All rights reserved.</p>
+            <div class="socials">
+                <a href="https://github.com/khalidhasananik" target="_blank">
+                    <img src="/icons/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/khalidhasananik/" target="_blank">
+                    <img src="/icons/in.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="overview.js"></script>
+
+</body>
+</html>

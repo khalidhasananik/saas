@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Scraper</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="loader-backdrop" id="loaderBackdrop"></div>
+    <div class="loader" id="loaderSpinner"></div>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Home</a>
+            <a href="https://khalidhasananik.space/" target="_blank" class="btn-touch">Get in Touch</a>
+        </div>
+        <div class="divider-line"></div>
+    </header>
+
+    <main>
+        <a href="index.html" class="back-nav">
+            <img src="/icons/back.png" alt="Back">
+            <span>All Actors</span>
+        </a>
+
+        <div class="scraper-header">
+            <img src="/icons/fb.png" alt="FB" style="width: 24px;">
+            <h1>Facebook Post Scraper</h1>
+        </div>
+
+        <p class="description">
+            This scraper will get post and page details from Facebook pages of your choice. To try it out, just paste a Facebook Page URL and click ▷ Start.
+        </p>
+
+        <div class="input-group">
+            <label>Facebook URL <span class="required">(required)</span></label>
+            <div class="url-input-outer">
+                <input type="text" id="fbUrlInput" class="url-input-inner" placeholder="http://www.facebook.com/facebook/">
+            </div>
+            <div id="errorMessage" class="error-msg">Something went wrong! Please check the URL and try again.</div>
+        </div>
+
+        <button class="btn-start" id="startBtn">
+            <svg width="14" height="18" viewBox="0 0 14 18" fill="none">
+                <path d="M2 2L12 9L2 16V2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Start
+        </button>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Khalid Hasan Anik. All rights reserved.</p>
+            <div class="socials">
+                <a href="https://github.com/khalidhasananik" target="_blank">
+                    <img src="/icons/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/khalidhasananik/" target="_blank">
+                    <img src="/icons/in.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scraper.js"></script>
+
+</body>
+</html>
