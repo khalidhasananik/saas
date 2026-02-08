@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Scout</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loader-backdrop" id="loaderBackdrop"></div>
+    <div class="loader" id="loaderSpinner"></div>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Home</a>
+            <a href="https://khalidhasananik.space/" target="_blank" class="btn-touch">Get in Touch</a>
+        </div>
+        <div class="divider-line"></div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="index.html" class="back-nav" style="margin-bottom:0;">
+                <img src="icons/back.png" alt="Back">
+                All Actors
+            </a>
+        </div>
+
+        <div class="scraper-header">
+            <img src="icons/product.png" alt="Price" style="width: 24px;">
+            <h1>Price Scout</h1>
+        </div>
+
+        <p class="description">
+            Price Scout helps you search products across the web and instantly. To try it out, search for any product with your country code and click ▷ Start.
+        </p>
+
+        <div class="input-row">
+            <div class="input-group-half">
+                <label>Product Name <span class="required">(required)</span></label>
+                <div class="split-input-container">
+                    <input type="text" id="productInput" placeholder="Apple AirPods Pro 3">
+                    <div class="split-divider"></div>
+                    <div class="fixed-text">Price in</div>
+                </div>
+            </div>
+
+            <div class="input-group-half">
+                <label>Country <span class="required">(required)</span></label>
+                <div class="select-container">
+                    <select id="countrySelect">
+                        <option value="us">United States (us)</option>
+                        <option value="gb">United Kingdom (gb)</option>
+                        <option value="ca">Canada (ca)</option>
+                        <option value="bd" selected>Bangladesh (bd)</option>
+                        <option value="in">India (in)</option>
+                        <option value="au">Australia (au)</option>
+                    </select>
+                    <img src="icons/down.png" class="select-arrow">
+                </div>
+            </div>
+        </div>
+
+        <div id="errorMessage" class="error-msg">Something went wrong!</div>
+
+        <button class="btn-start" id="startBtn">
+            <svg width="14" height="18" viewBox="0 0 14 18" fill="none"><path d="M2 2L12 9L2 16V2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Start
+        </button>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Khalid Hasan Anik. All rights reserved.</p>
+            <div class="socials">
+                <a href="https://github.com/khalidhasananik" target="_blank"><img src="icons/github.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/khalidhasananik/" target="_blank"><img src="icons/in.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="price-scout.js"></script>
+</body>
+</html>
